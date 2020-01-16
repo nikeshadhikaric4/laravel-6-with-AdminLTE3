@@ -25,3 +25,5 @@ Auth::routes(['register'=>false]);
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('/adminpanel/personalcontact', 'PersonalContactController');
+
+Route::resource('/adminpanel/users','UserController' );

@@ -27,8 +27,15 @@
                   <p>Personal Contact</p>
                 </a>
               </li>
-          
-          
+
+                 <li class="nav-item">
+                <a href="{{route('users.index')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>User</p>
+                </a>
+              </li>
+
+
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           {{-- <li class="nav-item has-treeview menu-open">
