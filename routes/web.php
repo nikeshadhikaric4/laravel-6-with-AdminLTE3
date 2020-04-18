@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('/adminpanel', function () {
     return view('backend/layouts/main');
@@ -24,6 +24,11 @@ Auth::routes(['register'=>false]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/', 'WebsiteController@index')->name('website.index');
+
 Route::resource('/adminpanel/personalcontact', 'PersonalContactController');
+
+Route::resource('/adminpanel/image', 'ImageController');
+
 
 Route::resource('/adminpanel/users','UserController' );
